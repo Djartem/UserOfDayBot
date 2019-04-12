@@ -7,10 +7,11 @@ public class Bot extends TelegramLongPollingBot {
     }
 
     public String getBotUsername() {
-        return null;
+        return "UserOfDayBot";
     }
 
     public String getBotToken() {
-        return null;
+        System.out.println(System.getenv("BOT_TOKEN"));
+        return System.getenv("BOT_TOKEN");
     }
 }
