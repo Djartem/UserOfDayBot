@@ -34,7 +34,7 @@ public class Bot extends TelegramLongPollingBot {
     public void onUpdateReceived(Update update) {
         Message message = update.getMessage();
         if (message != null && message.hasText()) {
-            sendMsg(message, "Пашел Нахуй ПИдр");
+            sendMsg(message, "Ты че бля Паскуда");
         }
     }
 
