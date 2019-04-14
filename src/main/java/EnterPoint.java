@@ -25,7 +25,7 @@ public class EnterPoint {
         for (UserEntity u :
                 userEntities) {
             System.out.println(u.getUsername() + " " + u.getChatId() + " " + u.getUserId());
-            u.setUsername("rofl");
+            u.setUsername("zalupa");
         }
 //        user.setChatId(321313);
 //        user.setUserId(3213331);
