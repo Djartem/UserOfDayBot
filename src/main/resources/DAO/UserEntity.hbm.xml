@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="DAO.UserEntity" table="user" schema="test" catalog="d79rks0b7v2fuu">
+        <id name="id">
+            <column name="id" sql-type="integer"/>
+        </id>
+        <property name="userId">
+            <column name="user_id" sql-type="bigint"/>
+        </property>
+        <property name="chatId">
+            <column name="chat_id" sql-type="bigint"/>
+        </property>
+        <property name="username">
+            <column name="user_name" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="pidorCount">
+            <column name="pidor_count" sql-type="integer"/>
+        </property>
+        <property name="prettyCount">
+            <column name="pretty_count" sql-type="integer" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
